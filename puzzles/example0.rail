@@ -1,0 +1,16 @@
+# Simplest puzzle: one car, one caboose, straight track needed.
+SIZE 5 1
+
+GRID
+_ _ _ _ _
+
+TRAINS
+# id row col dir color
+1  0  0  E  1
+
+CABOOSES
+# color row col entry_side
+1  0  4  W
+
+PIECES
+straight 3

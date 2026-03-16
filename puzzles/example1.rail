@@ -1,0 +1,28 @@
+# Two cars merge via a switch, then reach the caboose in order.
+#
+# Car 1 (front, id=1) drives East along row 1.
+# Car 2 (id=2) drives East along row 2, curves up via row 2, then merges
+# through a switch onto car 1's track, coupling right behind car 1.
+#
+#  col:  0   1   2   3   4   5
+# row 1: →1  _   _  SW   _  C1
+# row 2: →2  _   _  CurveNW  (curves up into SW)
+
+SIZE 6 3
+
+GRID
+. . . . . .
+_ _ _ _ _ _
+_ _ _ _ _ .
+
+TRAINS
+1  1  0  E  1
+2  2  0  E  1
+
+CABOOSES
+1  1  5  W
+
+PIECES
+straight 4
+curve    1
+switch   1

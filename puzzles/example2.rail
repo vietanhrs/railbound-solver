@@ -1,0 +1,22 @@
+# Tunnel example: car enters tunnel at (0,1) going East, teleports to (2,1) still going East.
+# Then drives along row 2 to the caboose.
+
+SIZE 5 3
+
+GRID
+_ Ta . . .
+. .  . . .
+. Ta _ _ _
+
+TRAINS
+1  0  0  E  1
+
+CABOOSES
+1  2  4  W
+
+TUNNELS
+# label entry_row entry_col entry_facing  exit_row exit_col exit_facing
+a  0  1  E  2  1  E
+
+PIECES
+straight 3
